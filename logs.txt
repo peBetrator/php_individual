@@ -1,0 +1,23 @@
+DateTime		File		SESSION_ID		SESSION_USER		SESSION_AUTH		ACTION
+01/12/1919:58:30		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		[-]		navigated home_page
+01/12/1919:58:35		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		[-]		navigated home_page
+01/12/1919:58:44		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1919:58:46		/add.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated add_page
+01/12/1919:59:10		/add.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated add_page
+01/12/1919:59:10		/add.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		request POST news
+01/12/1919:59:10		/add.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		request POST news SUCCESS
+01/12/1919:59:10		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1919:59:28		/users.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated users_page
+01/12/1920:01:13		/users.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated users_page
+01/12/1920:16:01		/users.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated users_page
+01/12/1920:19:15		/users.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated users_page
+01/12/1920:19:22		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1920:21:18		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1920:21:21		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1920:22:28		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1920:33:55		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1920:35:42		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1920:38:46		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1920:39:17		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1920:40:00		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page
+01/12/1920:44:54		/index.php		tud3p1taj1c0vmtm9batpkluh1		[-]		admin		navigated home_page

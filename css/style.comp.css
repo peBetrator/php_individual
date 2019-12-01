@@ -1,127 +1,245 @@
 *,
 *::before,
 *::after,
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 62.5%; }
-  @media only screen and (max-width: 36em) {
-    html {
-      font-size: 50%; } }
-  @media only screen and (max-width: 25em) {
-    html {
-      font-size: 37.5%; } }
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 36em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 37.5%;
+  }
+}
 
 .Header {
   padding: 2.4rem 0;
   margin: 0 3rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
-  @media only screen and (max-width: 36em) {
-    .Header {
-      flex-direction: column; } }
+  justify-content: space-between;
+}
+@media only screen and (max-width: 36em) {
+  .Header {
+    flex-direction: column;
+  }
+}
 
 .LogoBox {
-  height: 3.2rem; }
-  @media only screen and (max-width: 36em) {
-    .LogoBox {
-      margin-bottom: 1.5rem; } }
+  height: 3.2rem;
+}
+@media only screen and (max-width: 36em) {
+  .LogoBox {
+    margin-bottom: 1.5rem;
+  }
+}
 
 .Logo {
   height: 100%;
-  width: auto; }
+  width: auto;
+}
 
 .Navigation {
   display: flex;
   align-items: center;
-  list-style: none; }
+  list-style: none;
+}
 
 .NavigationItem:not(:last-child) {
-  margin-right: 1.6rem; }
+  margin-right: 1.6rem;
+}
 
-.NavigationItem a:link, .NavigationItem a:visited, .NavigationItem a:hover, .NavigationItem a:active {
+.NavigationItem a:link,
+.NavigationItem a:visited,
+.NavigationItem a:hover,
+.NavigationItem a:active {
   font-size: 1.6rem;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
-.NavigationItem a:link, .NavigationItem a:visited {
-  color: #757575; }
+.NavigationItem a:link,
+.NavigationItem a:visited {
+  color: #757575;
+}
 
-.NavigationItem a:hover, .NavigationItem a:active {
-  color: #616161; }
+.NavigationItem a:hover,
+.NavigationItem a:active {
+  color: #616161;
+}
 
-.NavigationItem a.Active:link, .NavigationItem a.Active:visited {
-  color: #424242; }
+.NavigationItem a.Active:link,
+.NavigationItem a.Active:visited {
+  color: #424242;
+}
 
-.NavigationItem a.Active:hover, .NavigationItem a.Active:active {
-  color: #616161; }
+.NavigationItem a.Active:hover,
+.NavigationItem a.Active:active {
+  color: #616161;
+}
 
 .Events {
   position: relative;
   min-height: 60vh;
-  margin: 0 1.5rem; }
-  .Events .EventPreview {
-    display: flex;
-    cursor: pointer;
-    flex-direction: column;
-    margin-bottom: 6rem; }
-    .Events .EventPreview:hover .Heading {
-      text-decoration: underline; }
-  .Events .ImageBox {
-    width: 100%;
-    display: table;
-    padding-bottom: 66.66%;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 1.6rem; }
-  .Events .Image {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none; }
-  .Events .Details {
-    display: flex;
-    flex-direction: column;
-    justify-self: stretch;
-    height: 100%; }
-  .Events .Heading {
-    display: inline-block;
-    align-self: flex-start;
-    padding-bottom: 1px;
-    color: #1c1c1c;
-    font-size: 2.4rem;
-    font-size: calc(2.4rem - 3px);
-    font-weight: 700;
-    margin-bottom: .8rem; }
-  .Events .Subheading {
-    color: #424242;
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-bottom: 1.6rem; }
-  .Events .AdditionalInfoBox {
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between; }
-  .Events .Category,
-  .Events .Date {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    color: #757575; }
-  .Events a:hover {
-    text-decoration: none; }
+  margin: 0 1.5rem;
+}
+.Events .EventPreview {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  margin-bottom: 6rem;
+}
+.Events .EventPreview:hover .Heading {
+  text-decoration: underline;
+}
+.Events .ImageBox {
+  width: 100%;
+  display: table;
+  padding-bottom: 66.66%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.6rem;
+}
+.Events .Image {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.Events .Details {
+  display: flex;
+  flex-direction: column;
+  justify-self: stretch;
+}
+.Events .Heading {
+  display: inline-block;
+  align-self: flex-start;
+  padding-bottom: 1px;
+  color: #1c1c1c;
+  font-size: 2.4rem;
+  font-size: calc(2.4rem - 3px);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.Events .Subheading {
+  color: #424242;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+.Events .AdditionalInfoBox {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.Events .Category,
+.Events .Date {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #757575;
+}
+.Events a:hover {
+  text-decoration: none;
+}
 
 .Message {
   color: #1c1c1c;
@@ -130,269 +248,329 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+}
 
 .Signin {
   position: relative;
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .Signin .FormCaption {
-    text-align: center;
-    color: #1c1c1c;
-    font-size: 2.4rem;
-    font-weight: 700; }
-  .Signin .Form {
-    width: 90%;
-    max-width: 45rem;
-    padding: 4rem 6rem; }
-  .Signin .Error {
-    color: #1c1c1c;
-    font-size: 1.6rem;
-    text-align: center;
-    margin-bottom: .8rem; }
-  .Signin .Message {
-    color: #1c1c1c;
-    font-size: 2.4rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .Signin .Button {
-    display: table;
-    position: relative;
-    padding: .8rem 2.4rem;
-    background-color: transparent;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    color: #1c1c1c;
-    cursor: pointer;
-    border: none;
-    margin: auto; }
-    .Signin .Button:focus, .Signin .Button:active {
-      outline: none; }
-    .Signin .Button::before {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      border: 2px solid #1c1c1c;
-      top: -3px;
-      left: -3px;
-      transition: all .3s; }
-    .Signin .Button:hover::before {
-      top: 0;
-      left: 0; }
-    .Signin .Button::after {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      border: 2px solid #1c1c1c;
-      top: 3px;
-      left: 3px;
-      transition: all .3s; }
-    .Signin .Button:hover::after {
-      top: 0;
-      left: 0; }
-  .Signin .Input {
-    padding: 0 2rem;
-    margin-bottom: 3rem; }
-  .Signin .InputElement {
-    display: inline-block;
-    width: 100%;
-    padding: .4rem .8rem;
-    border: none;
-    font-size: 1.6rem;
-    border-bottom: 2px solid #616161;
-    transition: all .3s; }
-    .Signin .InputElement:focus {
-      outline: none;
-      border-bottom: 2px solid #1c1c1c; }
-  .Signin .Invalid {
-    border-bottom: 2px solid #BB0339; }
-  .Signin .Label {
-    display: inline-block;
-    color: #424242;
-    font-size: 1.6rem;
-    margin-bottom: .8rem; }
+  align-items: center;
+}
+.Signin .FormCaption {
+  text-align: center;
+  color: #1c1c1c;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.Signin .Form {
+  width: 90%;
+  max-width: 45rem;
+  padding: 4rem 6rem;
+}
+.Signin .Error {
+  color: #1c1c1c;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+.Signin .Message {
+  color: #1c1c1c;
+  font-size: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.Signin .Button {
+  display: table;
+  position: relative;
+  padding: 0.8rem 2.4rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #1c1c1c;
+  cursor: pointer;
+  border: none;
+  margin: auto;
+}
+.Signin .Button:focus,
+.Signin .Button:active {
+  outline: none;
+}
+.Signin .Button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #1c1c1c;
+  top: -3px;
+  left: -3px;
+  transition: all 0.3s;
+}
+.Signin .Button:hover::before {
+  top: 0;
+  left: 0;
+}
+.Signin .Button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #1c1c1c;
+  top: 3px;
+  left: 3px;
+  transition: all 0.3s;
+}
+.Signin .Button:hover::after {
+  top: 0;
+  left: 0;
+}
+.Signin .Input {
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+.Signin .InputElement {
+  display: inline-block;
+  width: 100%;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #616161;
+  transition: all 0.3s;
+}
+.Signin .InputElement:focus {
+  outline: none;
+  border-bottom: 2px solid #1c1c1c;
+}
+.Signin .Invalid {
+  border-bottom: 2px solid #bb0339;
+}
+.Signin .Label {
+  display: inline-block;
+  color: #424242;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
 
 .EventArticle {
   position: relative;
   padding-bottom: 6rem;
   max-width: 72rem;
   margin: auto;
-  min-height: 60vh; }
-  .EventArticle .ImageBox {
-    width: 100%;
-    margin: auto auto 1.6rem; }
-  .EventArticle .Image {
-    width: 100%; }
-  .EventArticle .Heading {
-    color: #1c1c1c;
-    font-size: 2.4rem;
-    font-weight: 700;
-    margin-bottom: .8rem; }
-  .EventArticle .Subheading {
-    color: #424242;
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-bottom: 1.6rem; }
-  .EventArticle .MainText {
-    color: rgba(0, 0, 0, 0.84);
-    font-size: 2.1rem;
-    line-height: 3.3rem;
-    font-weight: 400;
-    margin-bottom: 6rem; }
+  min-height: 60vh;
+}
+.EventArticle .ImageBox {
+  width: 100%;
+  margin: auto auto 1.6rem;
+}
+.EventArticle .Image {
+  width: 100%;
+}
+.EventArticle .Heading {
+  color: #1c1c1c;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.EventArticle .Subheading {
+  color: #424242;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+.EventArticle .MainText {
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 2.1rem;
+  line-height: 3.3rem;
+  font-weight: 400;
+  margin-bottom: 6rem;
+}
+.EventArticle .AdditionalInfoBox {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 36em) {
   .EventArticle .AdditionalInfoBox {
-    display: flex;
-    justify-content: space-between; }
-    @media only screen and (max-width: 36em) {
-      .EventArticle .AdditionalInfoBox {
-        flex-direction: column; } }
-  .EventArticle .Category,
-  .EventArticle .Date {
-    display: inline-block;
-    font-size: 1.6rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #757575; }
-  .EventArticle .Date {
-    text-align: right; }
-  .EventArticle .Message {
-    color: #1c1c1c;
-    font-size: 2.4rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .EventArticle a:link,
-  .EventArticle a:visited,
-  .EventArticle a:hover,
-  .EventArticle a:active {
-    text-decoration: none; }
+    flex-direction: column;
+  }
+}
+.EventArticle .Category,
+.EventArticle .Date {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #757575;
+}
+.EventArticle .Date {
+  text-align: right;
+}
+.EventArticle .Message {
+  color: #1c1c1c;
+  font-size: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.EventArticle a:link,
+.EventArticle a:visited,
+.EventArticle a:hover,
+.EventArticle a:active {
+  text-decoration: none;
+}
 
 .AddEvent {
   position: relative;
   padding-bottom: 6rem;
   max-width: 72rem;
   margin: auto;
-  min-height: 60vh; }
-  .AddEvent .ImageBox {
-    width: 100%;
-    margin: auto auto 1.6rem; }
-  .AddEvent .ImagePlaceholder {
-    width: 100%;
-    opacity: .8;
-    cursor: pointer; }
-    .AddEvent .ImagePlaceholder:hover {
-      opacity: 1; }
-  .AddEvent .Hidden {
-    display: none; }
-  .AddEvent .SelectedImage {
-    width: 100%; }
-  .AddEvent .TextArea {
-    width: 100%;
-    border: none;
-    resize: none;
-    overflow-y: hidden; }
-    .AddEvent .TextArea:focus {
-      outline: none; }
-  .AddEvent .Heading {
-    color: #1c1c1c;
-    font-size: 2.4rem;
-    font-weight: 700;
-    margin-bottom: .8rem; }
-  .AddEvent .Subheading {
-    color: #424242;
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-bottom: 1.6rem; }
-  .AddEvent .MainText {
-    color: rgba(0, 0, 0, 0.84);
-    font-size: 2.1rem;
-    line-height: 3.3rem;
-    font-weight: 400;
-    margin-bottom: 6rem; }
+  min-height: 60vh;
+}
+.AddEvent .ImageBox {
+  width: 100%;
+  margin: auto auto 1.6rem;
+}
+.AddEvent .ImagePlaceholder {
+  width: 100%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.AddEvent .ImagePlaceholder:hover {
+  opacity: 1;
+}
+.AddEvent .Hidden {
+  display: none;
+}
+.AddEvent .SelectedImage {
+  width: 100%;
+}
+.AddEvent .TextArea {
+  width: 100%;
+  border: none;
+  resize: none;
+  overflow-y: hidden;
+}
+.AddEvent .TextArea:focus {
+  outline: none;
+}
+.AddEvent .Heading {
+  color: #1c1c1c;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.AddEvent .Subheading {
+  color: #424242;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+.AddEvent .MainText {
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 2.1rem;
+  line-height: 3.3rem;
+  font-weight: 400;
+  margin-bottom: 6rem;
+}
+.AddEvent .AdditionalInfoBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 36em) {
   .AddEvent .AdditionalInfoBox {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; }
-    @media only screen and (max-width: 36em) {
-      .AddEvent .AdditionalInfoBox {
-        flex-direction: column; } }
-  .AddEvent .Category,
-  .AddEvent .Date {
-    display: inline-block;
-    font-size: 1.6rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #757575; }
-  .AddEvent .Date {
-    text-align: right;
-    margin-left: auto; }
+    flex-direction: column;
+  }
+}
+.AddEvent .Category,
+.AddEvent .Date {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #757575;
+}
+.AddEvent .Date {
+  text-align: right;
+  margin-left: auto;
+}
+.AddEvent .Input {
+  color: #424242;
+  display: inline-block;
+  padding: 0.4rem 0;
+  border: none;
+  border-bottom: 2px solid #616161;
+  transition: all 0.3s;
+  align-self: center;
+}
+.AddEvent .Input:focus {
+  outline: none;
+  border-bottom: 2px solid #1c1c1c;
+}
+@media only screen and (max-width: 36em) {
   .AddEvent .Input {
-    color: #424242;
-    display: inline-block;
-    padding: .4rem 0;
-    border: none;
-    border-bottom: 2px solid #616161;
-    transition: all .3s;
-    align-self: center; }
-    .AddEvent .Input:focus {
-      outline: none;
-      border-bottom: 2px solid #1c1c1c; }
-    @media only screen and (max-width: 36em) {
-      .AddEvent .Input {
-        text-align: left;
-        width: 18rem; } }
-  .AddEvent .Publish {
-    margin: 6rem auto; }
-  .AddEvent .Message {
-    color: #1c1c1c;
-    font-size: 2.4rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .AddEvent .Button {
-    display: block;
-    position: relative;
-    padding: .8rem 2.4rem;
-    background-color: transparent;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    color: #1c1c1c;
-    cursor: pointer;
-    border: none;
-    margin: auto; }
-    .AddEvent .Button:focus, .AddEvent .Button:active {
-      outline: none; }
-    .AddEvent .Button::before {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      border: 2px solid #1c1c1c;
-      top: -3px;
-      left: -3px;
-      transition: all .3s; }
-    .AddEvent .Button:hover::before {
-      top: 0;
-      left: 0; }
-    .AddEvent .Button::after {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      border: 2px solid #1c1c1c;
-      top: 3px;
-      left: 3px;
-      transition: all .3s; }
-    .AddEvent .Button:hover::after {
-      top: 0;
-      left: 0; }
+    text-align: left;
+    width: 18rem;
+  }
+}
+.AddEvent .Publish {
+  margin: 6rem auto;
+}
+.AddEvent .Message {
+  color: #1c1c1c;
+  font-size: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.AddEvent .Button {
+  display: block;
+  position: relative;
+  padding: 0.8rem 2.4rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #1c1c1c;
+  cursor: pointer;
+  border: none;
+  margin: auto;
+}
+.AddEvent .Button:focus,
+.AddEvent .Button:active {
+  outline: none;
+}
+.AddEvent .Button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #1c1c1c;
+  top: -3px;
+  left: -3px;
+  transition: all 0.3s;
+}
+.AddEvent .Button:hover::before {
+  top: 0;
+  left: 0;
+}
+.AddEvent .Button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #1c1c1c;
+  top: 3px;
+  left: 3px;
+  transition: all 0.3s;
+}
+.AddEvent .Button:hover::after {
+  top: 0;
+  left: 0;
+}
